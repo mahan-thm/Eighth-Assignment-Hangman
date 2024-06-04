@@ -88,14 +88,19 @@
                                     <Image url="@alphabets.gif" />
                                  </image>
                               </ImageView>
-                              <Pane fx:id="logSign_pane" layoutX="-12.0" layoutY="-68.0" prefHeight="244.0" prefWidth="200.0">
+                              <Pane fx:id="logSign_pane" layoutX="-148.0" layoutY="-55.0" prefHeight="206.0" prefWidth="475.0">
                                  <children>
                                     <Button mnemonicParsing="false" onAction="#login_action" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Login" textFill="#571400">
                                        <font>
                                           <Font name="Ravie" size="33.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutY="149.0" mnemonicParsing="false" onAction="#signUp_action" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Sign up" textFill="#5b1700">
+                                    <Button layoutX="270.0" mnemonicParsing="false" onAction="#signUp_action" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Sign up" textFill="#5b1700">
+                                       <font>
+                                          <Font name="Ravie" size="33.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="135.0" layoutY="116.0" mnemonicParsing="false" onAction="#signUp_action" opacity="0.7" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Rating" textFill="#5b1700">
                                        <font>
                                           <Font name="Ravie" size="33.0" />
                                        </font>

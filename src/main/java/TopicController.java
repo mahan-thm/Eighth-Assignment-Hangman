@@ -39,4 +39,14 @@ public class TopicController implements Initializable {
 
 
     }
+
+    public void goToGame(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game/hangman.fxml")));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        String css = Objects.requireNonNull(this.getClass().getResource("game/hangmanStyle.css")).toExternalForm();
+        scene.getStylesheets().add(css);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

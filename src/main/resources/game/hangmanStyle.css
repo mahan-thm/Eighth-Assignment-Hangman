@@ -1,0 +1,9 @@
+.letters_style {
+    -fx-border-width: 3;
+    -fx-border-color: #5b1700;
+    -fx-border-style: solid;
+    -fx-background-color: #ffffb0;
+    -fx-font-size: 35;
+    -fx-text-fill:  #5b1700;
+    -fx-font-family: "Cooper Black";
+}

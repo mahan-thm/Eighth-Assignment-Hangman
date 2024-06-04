@@ -29,7 +29,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
          </rowConstraints>
          <children>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Sports" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Sports" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
@@ -40,7 +40,7 @@
                      </image></ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="  Food" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="  Food" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
@@ -52,7 +52,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Travel" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Travel" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
@@ -64,7 +64,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text=" Body" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text=" Body" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
@@ -76,7 +76,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Animal" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Animal" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="Forte" size="20.0" />
                </font>
@@ -88,7 +88,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Nature" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" onAction="#goToGame" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Nature" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font name="Forte" size="22.0" />
                </font>

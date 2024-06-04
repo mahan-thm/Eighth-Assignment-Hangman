@@ -21,7 +21,6 @@ public class HangmanApp extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setMinWidth(850);
         stage.setMinHeight(650);
-
         stage.setTitle("Hangman");
         stage.setScene(scene);
         stage.show();
