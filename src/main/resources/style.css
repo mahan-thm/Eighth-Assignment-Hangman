@@ -1,3 +1,10 @@
-#login_borderPane{
-    -fx-background-color: #ffffa6;
+.textField-text-color-5b1700{
+    -fx-text-fill: #5b1700;
+}
+
+.passwordField-text-color-5b1700{
+    -fx-text-fill: #5b1700;
+}
+.button-background-color-transparent{
+    -fx-background-color: transparent;
 }

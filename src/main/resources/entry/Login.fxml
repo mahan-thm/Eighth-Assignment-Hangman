@@ -2,6 +2,9 @@
 
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -17,67 +20,6 @@
 <?import javafx.scene.text.Text?>
 
 <BorderPane fx:id="login_borderPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color: #ffffa6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
-   <top>
-      <HBox alignment="CENTER" prefHeight="170.0" prefWidth="850.0" BorderPane.alignment="CENTER">
-         <children>
-            <Pane prefHeight="170.0" prefWidth="253.0">
-               <children>
-                  <Group layoutX="-4.0" layoutY="100.0">
-                     <children>
-                        <Text layoutX="2.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hang">
-                           <font>
-                              <Font name="DejaVu Serif Bold" size="70.0" />
-                           </font>
-                           <fill>
-                              <LinearGradient endX="1.0" endY="1.0" startX="0.48484848304228356" startY="0.4431818470810399">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color red="0.35789474844932556" green="0.08947368711233139" />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="0.9254902005195618" green="0.9019607901573181" blue="0.9019607901573181" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </LinearGradient>
-                           </fill>
-                        </Text>
-                        <Text layoutX="2.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Man">
-                           <font>
-                              <Font name="DejaVu Serif Bold" size="70.0" />
-                           </font>
-                           <fill>
-                              <LinearGradient endX="1.0" endY="1.0" startX="0.48484848304228356" startY="0.4431818470810399">
-                                 <stops>
-                                    <Stop>
-                                       <color>
-                                          <Color red="0.35686275362968445" green="0.09019608050584793" />
-                                       </color>
-                                    </Stop>
-                                    <Stop offset="1.0">
-                                       <color>
-                                          <Color red="1.0" green="1.0" blue="1.0" />
-                                       </color>
-                                    </Stop>
-                                 </stops>
-                              </LinearGradient>
-                           </fill>
-                        </Text>
-                     </children>
-                  </Group>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@HangedMan.gif" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-         </children>
-      </HBox>
-   </top>
    <center>
       <HBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
          <children>
@@ -126,16 +68,63 @@
                                     <Image url="@ezgif-3-24211d771e.gif" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="-14.0" layoutY="57.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Login" textFill="#571400">
-                                 <font>
-                                    <Font name="Ravie" size="33.0" />
-                                 </font>
-                              </Button>
-                              <Button layoutX="-14.0" layoutY="-85.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Sign up" textFill="#5b1700">
-                                 <font>
-                                    <Font name="Ravie" size="33.0" />
-                                 </font>
-                              </Button>
+                              <Pane fx:id="logSign_Pane" layoutX="-12.0" layoutY="-91.0" prefHeight="244.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Login" textFill="#571400">
+                                       <font>
+                                          <Font name="Ravie" size="33.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutY="149.0" mnemonicParsing="false" onAction="#signUp_action" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Sign up" textFill="#5b1700">
+                                       <font>
+                                          <Font name="Ravie" size="33.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="signUp_pane" layoutX="-274.0" layoutY="-140.0" prefHeight="342.0" prefWidth="724.0" visible="false">
+                                 <children>
+                                    <TextField layoutX="362.0" layoutY="80.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #ffffa6;" styleClass="textField-text-color" stylesheets="@../style.css">
+                                       <font>
+                                          <Font name="Eras Demi ITC" size="15.0" />
+                                       </font></TextField>
+                                    <Label layoutX="249.0" layoutY="24.0" text="Create your new account" textFill="#ffffa6">
+                                       <font>
+                                          <Font name="Eras Bold ITC" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <PasswordField layoutX="362.0" layoutY="143.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #ffffa6;" styleClass="passwordField-text-color" stylesheets="@../style.css">
+                                       <font>
+                                          <Font name="Eras Demi ITC" size="15.0" />
+                                       </font>
+                                    </PasswordField>
+                                    <PasswordField layoutX="362.0" layoutY="206.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #ffffa6;" styleClass="passwordField-text-color" stylesheets="@../style.css">
+                                       <font>
+                                          <Font name="Eras Demi ITC" size="15.0" />
+                                       </font>
+                                    </PasswordField>
+                                    <Text fill="#ffffa6" layoutX="106.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+                                       <font>
+                                          <Font name="Eras Bold ITC" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#ffffa6" layoutX="106.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                                       <font>
+                                          <Font name="Eras Bold ITC" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#ffffa6" layoutX="106.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password:">
+                                       <font>
+                                          <Font name="Eras Bold ITC" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="290.0" layoutY="276.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="144.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Sign up" textFill="#5b1700">
+                                       <font>
+                                          <Font name="Ravie" size="22.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Pane>
                            </children>
                         </Group>
                      </children>
@@ -145,4 +134,80 @@
          </children>
       </HBox>
    </center>
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <HBox alignment="CENTER" prefHeight="170.0" prefWidth="732.0">
+               <children>
+                  <Pane prefHeight="170.0" prefWidth="345.0">
+                     <children>
+                        <Group layoutX="5.0" layoutY="95.0">
+                           <children>
+                              <Text layoutX="2.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hang">
+                                 <font>
+                                    <Font name="DejaVu Serif Bold" size="70.0" />
+                                 </font>
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.48484848304228356" startY="0.4431818470810399">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.35686275362968445" green="0.09019608050584793" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="0.6509804129600525" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Text>
+                              <Text layoutX="2.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Man">
+                                 <font>
+                                    <Font name="DejaVu Serif Bold" size="70.0" />
+                                 </font>
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.48484848304228356" startY="0.4431818470810399">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.35686275362968445" green="0.09019608050584793" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="0.6509804129600525" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Text>
+                           </children>
+                        </Group>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="132.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@HangedMan.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </center>
+         <left>
+            <Pane prefHeight="166.0" prefWidth="110.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="107.0" prefWidth="110.0" styleClass="button-background-color-transparent" stylesheets="@../style.css" text="⮘" textFill="#5b1700">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </top>
 </BorderPane>
