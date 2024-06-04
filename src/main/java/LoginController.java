@@ -1,11 +1,21 @@
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import javafx.event.ActionEvent;
+
+import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
@@ -18,7 +28,7 @@ public class LoginController implements Initializable {
         FadeTransition fadeTransition = new FadeTransition(Duration.seconds(2));
         fadeTransition.setNode(login_borderPane);
         fadeTransition.setFromValue(0);
-        fadeTransition.setToValue(2);
+        fadeTransition.setToValue(1);
         fadeTransition.play();
     }
 
@@ -125,8 +135,19 @@ public class LoginController implements Initializable {
     }
 
 
-    public void getIntoAccount_action(){
+
+
+    public void getIntoAccount_action(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("topics/topics.fxml")));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        String css = Objects.requireNonNull(this.getClass().getResource("topics/topicsStyle.css")).toExternalForm();
+        scene.getStylesheets().add(css);
+        stage.setScene(scene);
+        stage.show();
+
 
     }
+
 
 }

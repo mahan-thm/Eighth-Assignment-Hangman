@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color: #ffffa6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="topics_boarderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color: #ffffa6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TopicController">
    <center>
       <GridPane alignment="CENTER" prefHeight="430.0" prefWidth="840.0" BorderPane.alignment="CENTER">
          <columnConstraints>
@@ -29,18 +29,18 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
          </rowConstraints>
          <children>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" stylesheets="@../style.css" text="Sports" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Sports" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@sport.gif" />
+                        <Image url="@sport2.gif" />
                      </image></ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" stylesheets="@../style.css" text="  Food" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="  Food" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
@@ -52,7 +52,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" stylesheets="@../style.css" text="Travel" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Travel" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
@@ -64,7 +64,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" stylesheets="@../style.css" text=" Body" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text=" Body" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font name="Forte" size="23.0" />
                </font>
@@ -76,7 +76,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" stylesheets="@../style.css" text="Animal" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Animal" textFill="#ffffa8" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="Forte" size="20.0" />
                </font>
@@ -88,7 +88,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" stylesheets="@../style.css" text="Nature" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button alignment="CENTER" maxHeight="80.0" maxWidth="170.0" minHeight="80.0" minWidth="129.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="129.0" style="-fx-background-radius: 30;" stylesheets="@../style.css" text="Nature" textFill="#ffffa8" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font name="Forte" size="22.0" />
                </font>
@@ -113,7 +113,7 @@
          <left>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" styleClass="button-background-color-transparent" stylesheets="@../style.css" text="⮘" textFill="#5b1700">
+                  <Button mnemonicParsing="false" onAction="#backToLogin_action" styleClass="button-background-color-transparent" stylesheets="@../style.css" text="⮘" textFill="#5b1700">
                      <font>
                         <Font size="50.0" />
                      </font>
