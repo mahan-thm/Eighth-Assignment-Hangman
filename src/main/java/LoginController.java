@@ -4,6 +4,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -20,8 +21,10 @@ public class LoginController implements Initializable {
         fadeTransition.setToValue(2);
         fadeTransition.play();
     }
-@FXML
-private Pane login_pane;
+
+    @FXML
+    private Pane login_pane;
+
     public void login_action() {
         FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(1));
         fadeTransition1.setNode(logSign_pane);
@@ -47,9 +50,7 @@ private Pane login_pane;
                     backButton_pane.setVisible(true);
                 }
         );
-
         fadeTransition1.play();
-
     }
 
     @FXML
@@ -59,7 +60,7 @@ private Pane login_pane;
     @FXML
     private Pane backButton_pane;
 
-    public void signUp_action(){
+    public void signUp_action() {
         FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(1));
         fadeTransition1.setNode(logSign_pane);
         fadeTransition1.setFromValue(1);
@@ -88,7 +89,7 @@ private Pane login_pane;
         fadeTransition1.play();
     }
 
-    public void backToLoginSign_action(){
+    public void backToLoginSign_action() {
         FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(1));
         fadeTransition1.setNode(backButton_pane);
         fadeTransition1.setFromValue(1);
@@ -120,11 +121,12 @@ private Pane login_pane;
                     logSign_pane.setVisible(true);
                 }
         );
-
         fadeTransition1.play();
-
     }
 
 
+    public void getIntoAccount_action(){
+
+    }
 
 }

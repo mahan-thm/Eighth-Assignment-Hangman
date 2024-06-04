@@ -31,32 +31,52 @@
                            <children>
                               <Ellipse centerX="55.0" centerY="20.0" layoutX="33.0" layoutY="11.0" radiusX="394.0" radiusY="231.0" strokeWidth="0.0">
                                  <stroke>
-                                    <LinearGradient endX="1.0" endY="1.0" startX="0.5227272709210714" startY="0.4431818470810399">
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                                        <stops>
                                           <Stop>
                                              <color>
                                                 <Color red="0.35686275362968445" green="0.09019608050584793" />
                                              </color>
                                           </Stop>
+                                          <Stop offset="0.006729475100942127">
+                                             <color>
+                                                <Color red="0.35686275362968445" green="0.09019608050584793" />
+                                             </color>
+                                          </Stop>
                                           <Stop offset="1.0">
                                              <color>
-                                                <Color red="1.0" green="1.0" blue="0.6509804129600525" />
+                                                <Color red="1.0" green="1.0" blue="0.6800000071525574" />
                                              </color>
                                           </Stop>
                                        </stops>
-                                    </LinearGradient>
+                                    </RadialGradient>
                                  </stroke>
                                  <fill>
-                                    <RadialGradient centerX="0.5000000421979787" centerY="0.537878787878788" cycleMethod="REPEAT" focusAngle="11.31" focusDistance="8.74930565775145E-8" radius="1.0">
+                                    <RadialGradient centerX="0.5000000421979787" centerY="0.537878787878788" cycleMethod="REPEAT" focusAngle="-148.2" focusDistance="8.74930565775145E-8" radius="1.0">
                                        <stops>
                                           <Stop>
                                              <color>
                                                 <Color red="0.35686275362968445" green="0.09019608050584793" />
                                              </color>
                                           </Stop>
-                                          <Stop offset="1.0">
+                                          <Stop offset="0.006729475100942127">
+                                             <color>
+                                                <Color red="0.35686275362968445" green="0.09019608050584793" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.22476446837146702">
+                                             <color>
+                                                <Color red="0.35686275362968445" green="0.09019608050584793" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.46702557200538325">
                                              <color>
                                                 <Color red="1.0" green="1.0" blue="0.6600000262260437" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="0.6901960968971252" />
                                              </color>
                                           </Stop>
                                        </stops>
@@ -65,10 +85,10 @@
                               </Ellipse>
                               <ImageView fitHeight="500.0" fitWidth="852.0" layoutX="-338.0" layoutY="-206.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@ezgif-3-24211d771e.gif" />
+                                    <Image url="@alphabets.gif" />
                                  </image>
                               </ImageView>
-                              <Pane fx:id="logSign_pane" layoutX="-12.0" layoutY="-91.0" prefHeight="244.0" prefWidth="200.0">
+                              <Pane fx:id="logSign_pane" layoutX="-12.0" layoutY="-68.0" prefHeight="244.0" prefWidth="200.0">
                                  <children>
                                     <Button mnemonicParsing="false" onAction="#login_action" prefHeight="90.0" prefWidth="205.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Login" textFill="#571400">
                                        <font>
@@ -84,7 +104,7 @@
                               </Pane>
                               <Pane fx:id="signUp_pane" layoutX="-274.0" layoutY="-140.0" prefHeight="342.0" prefWidth="724.0" visible="false">
                                  <children>
-                                    <TextField layoutX="362.0" layoutY="80.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #ffffa6;" styleClass="textField-text-color" stylesheets="@../style.css">
+                                    <TextField layoutX="362.0" layoutY="80.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #ffffa6;" styleClass="textField-text-color-5b1700" stylesheets="@../style.css">
                                        <font>
                                           <Font name="Eras Demi ITC" size="15.0" />
                                        </font></TextField>
@@ -127,7 +147,7 @@
                               </Pane>
                               <Pane fx:id="login_pane" layoutX="-264.0" layoutY="-130.0" prefHeight="342.0" prefWidth="724.0" visible="false">
                                  <children>
-                                    <TextField layoutX="362.0" layoutY="111.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #ffffa6;" styleClass="textField-text-color" stylesheets="@../style.css">
+                                    <TextField layoutX="362.0" layoutY="111.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #ffffa6;" styleClass="textField-text-color-5b1700" stylesheets="@../style.css">
                                        <font>
                                           <Font name="Eras Demi ITC" size="15.0" />
                                        </font>
@@ -152,7 +172,7 @@
                                           <Font name="Eras Bold ITC" size="18.0" />
                                        </font>
                                     </Text>
-                                    <Button layoutX="290.0" layoutY="250.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="144.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Login" textFill="#5b1700">
+                                    <Button layoutX="290.0" layoutY="250.0" mnemonicParsing="false" onAction="#getIntoAccount_action" prefHeight="52.0" prefWidth="144.0" style="-fx-background-color: #ffffa6; -fx-background-radius: 40;" text="Login" textFill="#5b1700">
                                        <font>
                                           <Font name="Ravie" size="22.0" />
                                        </font>
