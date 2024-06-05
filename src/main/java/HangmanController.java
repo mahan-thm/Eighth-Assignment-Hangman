@@ -16,13 +16,14 @@ public class HangmanController implements Initializable {
     private HBox letters_hBox;
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void initialize(URL url2, ResourceBundle resourceBundle) {
 
         FadeTransition fadeTransition = new FadeTransition(Duration.seconds(2));
         fadeTransition.setNode(hangman_boarderPane);
         fadeTransition.setFromValue(0);
         fadeTransition.setToValue(1);
         fadeTransition.play();
+
 
 
         for (int i = 0; i < 5; i++) {
