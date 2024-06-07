@@ -7,3 +7,15 @@
     -fx-text-fill:  #5b1700;
     -fx-font-family: "Cooper Black";
 }
+
+
+
+/* استایل دکمه‌ها */
+.button {
+    -fx-background-color: #5b1700; /* رنگ پس‌زمینه اولیه دکمه */
+}
+
+/* تغییر رنگ پس‌زمینه در هنگام هاور */
+.button:hover {
+    -fx-background-color: #5b4900; /* رنگ پس‌زمینه در هنگام هاور */
+}

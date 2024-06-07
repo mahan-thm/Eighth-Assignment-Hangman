@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -16,6 +17,7 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class TopicController implements Initializable {
+    public static String gameTopic;
     @FXML
     private BorderPane topics_boarderPane;
 
@@ -41,6 +43,8 @@ public class TopicController implements Initializable {
     }
 
     public void goToGame(ActionEvent actionEvent) throws IOException {
+        gameTopic = ((Button)actionEvent.getSource()).getText().toLowerCase();
+        System.out.println(gameTopic);
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game/hangman.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);

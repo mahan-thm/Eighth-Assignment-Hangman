@@ -16,7 +16,6 @@ public class HangmanApp extends Application {
         stage.show();
 
         GetWordData getWordData = new GetWordData("cheetah");
-        System.out.println(getWordData.getWord());
     }
 
     public static void main(String[] args) {

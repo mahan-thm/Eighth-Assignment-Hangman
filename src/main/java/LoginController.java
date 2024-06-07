@@ -145,8 +145,6 @@ public class LoginController implements Initializable {
         scene.getStylesheets().add(css);
         stage.setScene(scene);
         stage.show();
-
-
     }
 
 
