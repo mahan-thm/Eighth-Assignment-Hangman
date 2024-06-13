@@ -88,6 +88,11 @@
                      </image>
                   </ImageView>
                   <HBox fx:id="letters_hBox" layoutX="136.0" layoutY="-79.0" prefHeight="100.0" prefWidth="517.0" spacing="10.0" />
+                  <Label fx:id="time_label" alignment="CENTER" layoutX="135.0" layoutY="5.0" prefHeight="18.0" prefWidth="182.0" text="00:00:00" textFill="#5b1700">
+                     <font>
+                        <Font name="Forte" size="36.0" />
+                     </font>
+                  </Label>
                </children>
             </Group>
             <ImageView fitHeight="390.0" fitWidth="388.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
@@ -172,12 +177,13 @@
       </Pane>
    </left>
    <top>
-      <HBox alignment="CENTER" prefHeight="62.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="69.0" prefWidth="850.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="time_label" alignment="CENTER" prefHeight="18.0" prefWidth="182.0" text="12:45:33">
+            <Button alignment="CENTER" contentDisplay="CENTER" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#pause_action" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 40;" text="⏸" textAlignment="CENTER" textFill="#1edf00">
                <font>
-                  <Font name="Corbel Bold" size="36.0" />
-               </font></Label>
+                  <Font size="28.0" />
+               </font>
+            </Button>
          </children>
       </HBox>
    </top>

@@ -1,4 +1,7 @@
+import javafx.animation.Animation;
 import javafx.animation.FadeTransition;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,11 +13,12 @@ import javafx.scene.layout.HBox;
 import javafx.util.Duration;
 
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class HangmanController implements Initializable {
     private String word;
+    private boolean running = true;
+
     @FXML
     private BorderPane hangman_boarderPane;
     @FXML
@@ -40,6 +44,27 @@ public class HangmanController implements Initializable {
 
             letters_hBox.getChildren().add(label);
         }
+
+
+
+        long startTime = System.currentTimeMillis();
+        Timeline timeline = new Timeline(
+                new KeyFrame(Duration.seconds(1), event -> {
+                    if (running) {
+                        long elapsedTime = System.currentTimeMillis() - startTime;
+                        long totalSeconds = elapsedTime / 1000;
+                        long hours = totalSeconds / 3600;
+                        long minutes = totalSeconds / 60;
+                        long seconds = totalSeconds % 60;
+                        time_label.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
+                    }
+                })
+        );
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
+
+
+
 
     }
 
@@ -85,5 +110,9 @@ public class HangmanController implements Initializable {
             fadeTransition2.play();
             nthHangmanBody++;
         }
+    }
+    @FXML
+    public void pause_action(){
+
     }
 }
